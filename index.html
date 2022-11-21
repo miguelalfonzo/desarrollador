@@ -98,7 +98,7 @@
               <a href="#about" class="nav-link" data-animate="scrolling">Sobre Mi</a>
             </li>
             <li class="nav-item">
-              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+              <a  href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
             </li>
             
           
@@ -265,9 +265,9 @@
      
       <h1 class="text-center fw-normal wow fadeInUp">Últimos Proyectos</h1>
       <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
-        <button id="todos-btn" class="btn btn-theme-outline selected" data-filter="*">Todos</button>
+        <button id="all-btn" class="btn btn-theme-outline selected" data-filter="*" onclick="refreshAll()">Todos</button>
         <button class="btn btn-theme-outline" data-filter=".apps">App</button>
-        <button class="btn btn-theme-outline" data-filter=".template">Web</button>
+        <button  class="btn btn-theme-outline" data-filter=".template">Web</button>
         <!-- <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
         <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
         <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
@@ -422,8 +422,17 @@
     
     $( document ).ready(function() {
       
-      $('#todos-btn').click();
+      $('#all-btn').click();
+
+       
+      
 });
+
+    function refreshAll(){
+
+      $('#all-btn').addClass("selected");
+    }
+    
   </script>
    
   
